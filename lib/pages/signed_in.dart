@@ -26,14 +26,18 @@ class SignedIn extends StatelessWidget {
               ),
             ),
             Expanded(
-              child: Center(
-                  child: Column(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text('Welcome ${this.username}',
                       style: TextStyle(fontSize: 24)),
-                  Icon(Icons.check_circle_rounded)
+                  Icon(
+                    Icons.check_circle_rounded,
+                    size: 100,
+                    color: Colors.green,
+                  )
                 ],
-              )),
+              ),
             ),
           ],
         ),
